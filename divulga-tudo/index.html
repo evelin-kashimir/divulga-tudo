@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Divulga Tudo</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="t_principal" class="display-4">Divulga Tudo</h1>
+        <div class="row" >
+            <div class="card col-12">
+                <div id="box_1">
+                    <div class="card-body col-md-9">
+                        <h3 style="color: #2085b1;">Cadastro de Anúncios</h3>
+                        <hr/>
+                        <div id="cadastro">
+                            <span>Cliente:</span><input type="text" class="form-control" id="cliente" placeholder="Qual o seu nome?" required>
+                            <span>Anúncio</span><input type="text" class="form-control" id="anuncio" placeholder="Qual anúncio?" required> 
+                            <span>Data de início</span><input type="date" class="form-control">
+                            <span>Data de término</span><input type="date" class="form-control">
+                            <span>Investimento (por dia):</span>
+                            <div class="input-group mb-2">
+                                <span class="input-group-text">R$</span>
+                                <input type="text" class="form-control" id="investimento" >
+                                <span class="input-group-text">,00</span>
+                            </div>
+                            <div class="d-grid gap-3 d-md-block">
+                                <button type="button" class="btn btn-outline-primary" id="cadastrar" >Cadastrar Anúncio</button>
+                                <button type="button" class="btn btn-outline-primary" id="b-relatorio" >Emitir Relatório</button>
+                            </div>
+                            <button class="btn btn-outline-primary" id="cadastros">Anúncios cadastrados</button>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card col-12">
+                <div id="box_2">
+                    <div class="card-body col-md-9">
+                        <div id="relatorio">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Relatório de Resultados Esperados</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">CLiente</th>
+                                        <td id="p1"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Anúncio</th>
+                                        <td id="p2"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Valor investido</th>
+                                        <td id="p3"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Clicks</th>
+                                        <td id="p4"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Compartilhamentos</th>
+                                        <td id="p5"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Total de Visualizações</th>
+                                        <td id="p6"></td>
+                                    </tr>
+                            </tbody>
+                          </table>
+                          <a class="btn btn-outline-primary" id="novo_cadastro" href="index.html">Novo cadastro</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div id="box_3">
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <th>Cliente</th>
+                                    <th>Anúncio</th>
+                                    <th>Investimento</th>
+                                    <th>Clicks</th>
+                                    <th>Compartilhamentos</th>
+                                    <th>Visualizações</th>
+                                </thead>
+                                <tbody id="res">
+            
+                                </tbody>
+                            </table>
+                            <a class="btn btn-outline-primary" id="novo_cadastro" href="index.html">Novo cadastro</a>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="storage.js"></script>
+</body>
+</html>

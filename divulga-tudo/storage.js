@@ -51,9 +51,8 @@ function atualizarArmazenamento() {
 };
 
 //MOSTRANDO NOVO CADASTRO NA TELA
-$("#cadastros").click(function (){
+$("#cadastrar").click(function (){
     $("#box_2").hide();
-    $("#box_3").show();
     
     let clientx = new Cliente(  //Novo objeto, com dados salvos
         $("#cliente").val(),
@@ -85,4 +84,10 @@ function inserirLinha(cliente) {
     linha.append($("<td></td>").text(cliente.compartilhamentos))
     linha.append($("<td></td>").text(cliente.visu))
     $("#res").append(linha)
-};
+}
+
+$("#cadastros").click(function() {
+    $("#box_1").hide();
+    $("#box_2").hide();
+    $("#box_3").show(); 
+});

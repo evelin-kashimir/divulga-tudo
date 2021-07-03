@@ -85,4 +85,4 @@ function inserirLinha(cliente) {
     linha.append($("<td></td>").text(cliente.compartilhamentos))
     linha.append($("<td></td>").text(cliente.visu))
     $("#res").append(linha)
-}
+};

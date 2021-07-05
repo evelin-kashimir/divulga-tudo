@@ -30,4 +30,4 @@ git clone
 cd divulga-tudo
 
 #Abrir o ícone index da página
-xdg- open index.html 
+xdg-open index.html 

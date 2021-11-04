@@ -3,7 +3,7 @@
 <img src="https://ik.imagekit.io/ish51rfiqr/Captura_de_tela_de_2021-07-03_18-42-15_x1HOnSeqJ.png" width="600px" heigth="300px">
 
  ## Sobre 🔎
- O projeto **Divulga Tudo** é uma aplicação web, criada a partir de dados fictícios fornecidos pelo cliente (Capgemini). Com o intuido de cadastrar anúncios e fornecer relatórios de ganhos, baseados em seus investimentos.
+ O projeto **Divulga Tudo** é uma aplicação web, criada a partir de dados fictícios fornecidos pelo cliente (Capgemini). Com o intuito de cadastrar anúncios e fornecer relatórios de ganhos, baseados em seus investimentos.
  <hr>
 
  ## Como utilizar 📓
